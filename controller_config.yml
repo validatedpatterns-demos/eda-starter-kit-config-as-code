@@ -51,3 +51,15 @@ controller_credentials:
 controller_templates:
   - name: Demo Job Template
     state: absent
+
+eda_projects:
+  - name: EDA-SK GitOps
+    organization: EDA-SK Demo
+    scm_branch: main
+    scm_clean: "no"
+    scm_delete_on_update: "no"
+    scm_type: git
+    scm_update_on_launch: "yes"
+    scm_url: https://github.com/validatedpatterns-demos/rhvp.eda_starter_kit.git
+    wait: true
+    update_project: true
