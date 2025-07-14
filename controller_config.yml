@@ -1,3 +1,43 @@
 # vim: ft=yaml.ansible
 ---
-# This space intentionally left blank
+---
+aap_organizations:
+  - name: EDA-SK Demo
+    galaxy_credentials: Ansible Galaxy
+
+controller_settings:
+  - name: AWX_COLLECTIONS_ENABLED
+    value: true
+
+  - name: AWX_ROLES_ENABLED
+    value: true
+
+controller_projects:
+  - name: Demo Project
+    state: absent
+
+  - name: EDA-SK GitOps
+    organization: EDA-SK Demo
+    scm_branch: main
+    scm_clean: "no"
+    scm_delete_on_update: "no"
+    scm_type: git
+    scm_update_on_launch: "yes"
+    scm_url: https://github.com/validatedpatterns-demos/rhvp.eda_starter_kit.git
+    wait: true
+    update_project: true
+
+  - name: EDA-SK GitOps Inventory
+    organization: EDA-SK Demo
+    scm_branch: main
+    scm_clean: "no"
+    scm_delete_on_update: "no"
+    scm_type: git
+    scm_update_on_launch: "yes"
+    scm_url: https://github.com/validatedpatterns-demos/rhvp.eda_starter_kit.git
+    wait: true
+    update_project: true
+
+controller_templates:
+  - name: Demo Job Template
+    state: absent
