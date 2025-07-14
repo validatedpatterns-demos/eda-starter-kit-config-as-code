@@ -38,6 +38,17 @@ controller_projects:
     wait: true
     update_project: true
 
+controller_credentials:
+  - name: Hashivault
+    description: In-Cluster Hashicorp vault lookup
+    organization: HMI Demo
+    credential_type: HashiCorp Vault Secret Lookup
+    inputs:
+      url: "{{ secrets['vault_url'] }}"
+      token: "{{ secrets['vault_root_token'] }}"
+      cacert: "{{ secrets['vault_ca'] }}"
+      api_version: v2
+
 controller_templates:
   - name: Demo Job Template
     state: absent
