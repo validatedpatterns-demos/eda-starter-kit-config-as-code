@@ -1,6 +1,5 @@
 # vim: ft=yaml.ansible
 ---
----
 aap_organizations:
   - name: EDA-SK Demo
     galaxy_credentials: Ansible Galaxy
