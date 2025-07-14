@@ -40,7 +40,7 @@ controller_projects:
 controller_credentials:
   - name: Hashivault
     description: In-Cluster Hashicorp vault lookup
-    organization: HMI Demo
+    organization: EDA-SK Demo
     credential_type: HashiCorp Vault Secret Lookup
     inputs:
       url: "{{ secrets['vault_url'] }}"
