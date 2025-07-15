@@ -70,7 +70,7 @@ eda_credentials:
       username: '{{ basic_user }}'
       password: '{{ basic_password }}'
     credential_type: Basic Event Stream
-    organization_name: EDA-SK Demo
+    organization: EDA-SK Demo
 
 eda_event_streams:
   - name: Deployment Check Event Stream
