@@ -76,4 +76,3 @@ eda_event_streams:
   - name: Deployment Check Event Stream
     forward_events: true
     credential_name: Basic Auth Credential
-    
