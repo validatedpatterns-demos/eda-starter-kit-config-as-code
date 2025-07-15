@@ -68,6 +68,7 @@ eda_credentials:
   - name: Basic Auth Credential
     username: '{{ basic_user }}'
     password: '{{ basic_password }}'
+    credential_type: Basic Event Stream
 
 eda_event_streams:
   - name: Deployment Check Event Stream
