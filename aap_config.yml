@@ -66,9 +66,11 @@ eda_projects:
 
 eda_credentials:
   - name: Basic Auth Credential
-    username: '{{ basic_user }}'
-    password: '{{ basic_password }}'
+    inputs:
+      username: '{{ basic_user }}'
+      password: '{{ basic_password }}'
     credential_type: Basic Event Stream
+    organization_name: EDA-SK Demo
 
 eda_event_streams:
   - name: Deployment Check Event Stream
