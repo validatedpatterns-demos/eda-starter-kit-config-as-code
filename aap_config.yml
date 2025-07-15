@@ -63,3 +63,14 @@ eda_projects:
     scm_url: https://github.com/validatedpatterns-demos/rhvp.eda_starter_kit.git
     wait: true
     update_project: true
+
+eda_credentials:
+  - name: Basic Auth Credential
+    username: '{{ basic_user }}'
+    password: '{{ basic_password }}'
+
+eda_event_streams:
+  - name: Deployment Check Event Stream
+    forward_events: true
+    credential_name: Basic Auth Credential
+    
