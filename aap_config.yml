@@ -97,7 +97,7 @@ eda_event_streams:
 eda_rulebook_activations:
   - name: Dummy Debug Rulebook
     description: Dummy Rulebook that only does debug
-    project: EDA-SK Demo
+    project: EDA-SK GitOps
     organization: EDA-SK GitOps
     rulebook: dummy_debug.yml
     decision_environment: EDA-SK Default Decision Environment
