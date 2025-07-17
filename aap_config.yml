@@ -72,8 +72,16 @@ eda_credentials:
     credential_type: Basic Event Stream
     organization: EDA-SK Demo
 
+eda_decision_environments:
+  - name: EDA-SK Default Decision Environment
+    organization: EDA-SK Demo
+    credential: Ansible Galaxy
+    image_url: registry.redhat.io/ansible-automation-platform-25/de-minimal-rhel9:latest
+
 eda_event_streams:
   - name: Deployment Check Event Stream
     forward_events: true
     credential_name: Basic Auth Credential
     organization: EDA-SK Demo
+
+
