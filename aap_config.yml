@@ -67,7 +67,7 @@ eda_projects:
 eda_credentials:
   - name: Controller Token
     description: AAP Access Credentials
-    organization: EDA-SK GitOps
+    organization: EDA-SK Demo
     credential_type: Red Hat Ansible Automation Platform
     inputs:
       host: "{{ aap_hostname }}"
@@ -101,5 +101,3 @@ eda_rulebook_activations:
     organization: EDA-SK GitOps
     rulebook: dummy_debug.yml
     decision_environment: EDA-SK Default Decision Environment
-
-
