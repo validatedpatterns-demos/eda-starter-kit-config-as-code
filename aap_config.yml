@@ -102,4 +102,5 @@ eda_rulebook_activations:
     rulebook: dummy_debug.yml
     decision_environment: EDA-SK Default Decision Environment
     event_streams:
-      - Deployment Check Event Stream
+      - event_stream: Deployment Check Event Stream
+        source_name: AAP 2.5 Event Stream
