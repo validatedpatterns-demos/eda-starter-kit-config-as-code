@@ -98,6 +98,6 @@ eda_rulebook_activations:
   - name: Dummy Debug Rulebook
     description: Dummy Rulebook that only does debug
     project: EDA-SK GitOps
-    organization: EDA-SK GitOps
+    organization: EDA-SK Demo
     rulebook: dummy_debug.yml
     decision_environment: EDA-SK Default Decision Environment
