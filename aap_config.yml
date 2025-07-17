@@ -103,4 +103,4 @@ eda_rulebook_activations:
     decision_environment: EDA-SK Default Decision Environment
     event_streams:
       - event_stream: Deployment Check Event Stream
-        source_name: AAP 2.5 Event Stream
+        source_name: Dummy Webhook entry
