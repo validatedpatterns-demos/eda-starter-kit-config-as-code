@@ -65,6 +65,16 @@ eda_projects:
     update_project: true
 
 eda_credentials:
+  - name: Controller Token
+    description: AAP Access Credentials
+    organization: EDA-SK GitOps
+    credential_type: Red Hat Ansible Automation Platform
+    inputs:
+      host: "{{ aap_hostname }}"
+      username: "{{ aap_username | default('admin') }}"
+      password: "{{ aap_password }}"
+      verify_ssl: "{{ aap_validate_certs }}"
+
   - name: Basic Auth Credential
     inputs:
       username: '{{ basic_user }}'
@@ -83,5 +93,13 @@ eda_event_streams:
     forward_events: true
     credential_name: Basic Auth Credential
     organization: EDA-SK Demo
+
+eda_rulebook_activations:
+  - name: Dummy Debug Rulebook
+    description: Dummy Rulebook that only does debug
+    project: EDA-SK Demo
+    organization: EDA-SK GitOps
+    rulebook: dummy_debug.yml
+    decision_environment: EDA-SK Default Decision Environment
 
 
