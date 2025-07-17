@@ -101,6 +101,7 @@ eda_rulebook_activations:
     organization: EDA-SK Demo
     rulebook: dummy_debug.yml
     decision_environment: EDA-SK Default Decision Environment
+    log_level: debug
     event_streams:
       - event_stream: Deployment Check Event Stream
         source_name: Dummy Webhook entry
