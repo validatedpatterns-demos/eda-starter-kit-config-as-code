@@ -101,3 +101,5 @@ eda_rulebook_activations:
     organization: EDA-SK Demo
     rulebook: dummy_debug.yml
     decision_environment: EDA-SK Default Decision Environment
+    event_streams:
+      - Deployment Check Event Stream
