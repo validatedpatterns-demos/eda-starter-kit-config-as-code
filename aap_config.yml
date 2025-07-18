@@ -102,7 +102,7 @@ eda_rulebook_activations:
     rulebook: dummy_debug.yml
     decision_environment: EDA-SK Default Decision Environment
     log_level: error
-    restart: true
+    restart_policy: always
     event_streams:
       - event_stream: Deployment Check Event Stream
         source_name: Dummy Webhook entry
