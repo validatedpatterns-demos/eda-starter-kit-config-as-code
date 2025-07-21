@@ -94,15 +94,15 @@ eda_event_streams:
     credential_name: Basic Auth Credential
     organization: EDA-SK Demo
 
-#eda_rulebook_activations:
-#  - name: Dummy Debug Rulebook
-#    description: Dummy Rulebook that only does debug
-#    project: EDA-SK GitOps
-#    organization: EDA-SK Demo
-#    rulebook: dummy_debug.yml
-#    decision_environment: EDA-SK Default Decision Environment
-#    log_level: debug
-#    restart_policy: always
-#    event_streams:
-#      - event_stream: Deployment Check Event Stream
-#        source_name: Dummy Webhook entry
+eda_rulebook_activations:
+  - name: Dummy Debug Rulebook
+    description: Dummy Rulebook that only does debug
+    project: EDA-SK GitOps
+    organization: EDA-SK Demo
+    rulebook: dummy_debug.yml
+    decision_environment: EDA-SK Default Decision Environment
+    log_level: debug
+    restart_policy: always
+    event_streams:
+      - event_stream: Deployment Check Event Stream
+        source_name: Dummy Webhook entry
