@@ -142,6 +142,8 @@ eda_rulebook_activations:
     decision_environment: EDA-SK Default Decision Environment
     log_level: debug
     restart_policy: always
+    eda_credentials:
+      - Controller Token
     event_streams:
       - event_stream: Deployment Check Event Stream
         source_name: Dummy Webhook Ping JT
