@@ -133,3 +133,15 @@ eda_rulebook_activations:
     event_streams:
       - event_stream: Deployment Check Event Stream
         source_name: Dummy Webhook entry
+
+  - name: Dummy Ping Rulebook
+    description: Dummy Rulebook that only runs a ping playbook
+    project: EDA-SK GitOps
+    organization: EDA-SK Demo
+    rulebook: dummy_ping.yml
+    decision_environment: EDA-SK Default Decision Environment
+    log_level: debug
+    restart_policy: always
+    event_streams:
+      - event_stream: Deployment Check Event Stream
+        source_name: Dummy Webhook Pint JT
