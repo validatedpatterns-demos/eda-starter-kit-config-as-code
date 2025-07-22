@@ -144,4 +144,4 @@ eda_rulebook_activations:
     restart_policy: always
     event_streams:
       - event_stream: Deployment Check Event Stream
-        source_name: Dummy Webhook Pint JT
+        source_name: Dummy Webhook Ping JT
