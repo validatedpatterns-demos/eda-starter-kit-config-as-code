@@ -48,9 +48,29 @@ controller_credentials:
       cacert: "{{ secrets['vault_ca'] }}"
       api_version: v2
 
+controller_inventory_sources:
+  - name: Event-Driven Ansible Starter Kit Static Inventory
+    inventory: Event-Driven Ansible Starter Kit Inventory
+    organization: EDA-SK Demo
+    source: scm
+    source_project: EDA-SK GitOps
+    source_path: inventory
+    update_on_launch: true
+
+controller_inventories:
+  - name: Event-Driven Asnible Starter Kit Inventory
+    organization: EDA-SK Demo
+
 controller_templates:
   - name: Demo Job Template
     state: absent
+
+  - name: Ping
+    organization: EDA-SK Demo
+    project: EDA-SK GitOps
+    job_type: run
+    inventory: EDA-SK Inventory
+    execution_environment: Default execution environment
 
 eda_projects:
   - name: EDA-SK GitOps
