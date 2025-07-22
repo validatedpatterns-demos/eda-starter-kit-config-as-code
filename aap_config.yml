@@ -69,7 +69,7 @@ controller_templates:
     organization: EDA-SK Demo
     project: EDA-SK GitOps
     job_type: run
-    inventory: EDA-SK Inventory
+    inventory: Event-Driven Ansible Starter Kit Static Inventory
     execution_environment: Default execution environment
 
 eda_projects:
