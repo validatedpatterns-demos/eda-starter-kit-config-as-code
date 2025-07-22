@@ -77,6 +77,7 @@ controller_templates:
     job_type: run
     inventory: Event-Driven Ansible Starter Kit Localhost
     execution_environment: Default execution environment
+    playbook: playbooks/ping.yml
 
 eda_projects:
   - name: EDA-SK GitOps
