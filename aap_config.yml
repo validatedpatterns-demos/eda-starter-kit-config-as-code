@@ -58,7 +58,7 @@ controller_inventory_sources:
     update_on_launch: true
 
 controller_inventories:
-  - name: Event-Driven Asnible Starter Kit Inventory
+  - name: Event-Driven Ansible Starter Kit Inventory
     organization: EDA-SK Demo
 
 controller_templates:
