@@ -50,12 +50,6 @@ controller_inventories:
   - name: Event-Driven Ansible Starter Kit Inventory
     organization: EDA-SK Demo
 
-  - name: Event-Driven Ansible Starter Kit Localhost
-    organization: EDA-SK Demo
-    kind: smart
-    host_filter: name__icontains=localhost
-    inventory: Event-Driven Ansible Starter Kit Static Inventory
-
 controller_templates:
   - name: Demo Job Template
     state: absent
@@ -64,7 +58,6 @@ controller_templates:
     organization: EDA-SK Demo
     project: EDA-SK GitOps
     job_type: run
-    #inventory: Event-Driven Ansible Starter Kit Localhost
     inventory: Event-Driven Ansible Starter Kit Inventory
     execution_environment: Default execution environment
     playbook: playbooks/ping.yml
