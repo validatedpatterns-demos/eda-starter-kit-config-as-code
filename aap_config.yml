@@ -64,7 +64,8 @@ controller_templates:
     organization: EDA-SK Demo
     project: EDA-SK GitOps
     job_type: run
-    inventory: Event-Driven Ansible Starter Kit Localhost
+    #inventory: Event-Driven Ansible Starter Kit Localhost
+    inventory: Event-Driven Ansible Starter Kit Inventory
     execution_environment: Default execution environment
     playbook: playbooks/ping.yml
 
