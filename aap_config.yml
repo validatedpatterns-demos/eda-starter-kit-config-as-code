@@ -26,17 +26,6 @@ controller_projects:
     wait: true
     update_project: true
 
-  - name: EDA-SK GitOps Inventory
-    organization: EDA-SK Demo
-    scm_branch: main
-    scm_clean: "no"
-    scm_delete_on_update: "no"
-    scm_type: git
-    scm_update_on_launch: "yes"
-    scm_url: https://github.com/validatedpatterns-demos/rhvp.eda_starter_kit.git
-    wait: true
-    update_project: true
-
 controller_credentials:
   - name: Hashivault
     description: In-Cluster Hashicorp vault lookup
